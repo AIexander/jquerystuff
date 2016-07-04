@@ -136,3 +136,17 @@ for (var i = 0 ; i < 10; i++){$('div#right-image.portfolio-image').clone().appen
 
 ##Stretch Exercise:
 Sometimes you'll run into situations where you have to get by without jQuery.  Try to find vanilla JavaScript alternatives to each of your answers that use jQuery functions.
+
+
+
+var listItem = document.createElement('li');
+var leftSpan = document.createElement('span');
+var lastUpdated = document.createTextNode('Page Last updated on');
+  leftSpan.appendChild(lastUpdated);
+  listItem.appendChild(leftSpan);
+
+  $('ul.bio-info').append(listItem);
+
+
+
+     var rightSpan = document.createElement('span'); var date = document.createTextNode(Date()); rightSpan.appendChild(date); listItem.appendChild(rightSpan);
