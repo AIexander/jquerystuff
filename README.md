@@ -90,8 +90,10 @@ $('div#right-image.portfolio-image').clone().appendTo('h2.highlight')
 
 
 
-for (var i = 0 ; i < 10; i++){$('div#right-image.portfolio-image').clone().removeAttr('id').appendTo('section');};
+//for (var i = 0 ; i < 10; //i++){$('div#right-image.portfolio-image').c//lone().removeAttr('id').appendTo('section')//;};
+//
 
+for (var i = 0 ; i < 10; i++){$('div#right-image.portfolio-image').clone().appendTo('section');};
 
 
 15. Let’s add a message about when the page was last updated.  We'll do this by appending a new `<li>` element to the `<ul>` in the sidebar (you might need to refresh the page to bring back the list items that we emptied out earlier).  
